@@ -10,4 +10,3 @@ function catTalk() {
 catTalk();
 
 console.log(quote);
-console.log(catName);
