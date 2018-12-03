@@ -9,4 +9,4 @@ function catTalk() {
 }
 catTalk();
 
-console.log(catName);
+console.log(quote);
