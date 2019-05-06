@@ -3,7 +3,7 @@ let quote;
 function catTalk() {
   "use strict";
 
-  catName = "Oliver";
+  catName = "Oliver cat";
   quote = catName + " says Meow!";
 
 }
