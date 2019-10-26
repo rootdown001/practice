@@ -1,16 +1,26 @@
-function Bird() { }
+let funModule = (function() {
+  return {
+    isCuteMixin: function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+    }
+  }
+})();
 
-Bird.prototype.fly = function() { return "I am flying!"; };
+let isCuteMixin = function(obj) {
+  obj.isCute = function() {
+    return true;
+  };
+};
+let singMixin = function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+  };
+};
 
-function Penguin() { }
-Penguin.prototype = Object.create(Bird.prototype);
-Penguin.prototype.constructor = Penguin;
-
-// Add your code below this line
-Penguin.prototype.fly = function() {return "Alas, this is a flightless bird."};
-
-
-// Add your code above this line
-
-let penguin = new Penguin();
-console.log(penguin.fly());
