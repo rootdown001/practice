@@ -1,12 +1,15 @@
-let catName;
-let quote;
-function catTalk() {
-  "use strict";
-
-  catName = "Oliver cat";
-  quote = catName + " says Meow!";
-
+var count = 1;
+console.log('count: ', count);
+function chunkArrayInGroups(arr, size) {
+  console.log('size: ', size);
+  console.log('arr: ', arr);
+  
+  
+  return arr;
+  
+  
 }
-catTalk();
 
-console.log(quote);
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+
