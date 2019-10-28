@@ -41,3 +41,5 @@ var finalTabs = socialWindow
                     .join(videoWindow.tabClose(2)) // Close third tab in video window, and join
                     .join(workWindow.tabClose(1).tabOpen());
 console.log(finalTabs.tabs);
+
+//test
