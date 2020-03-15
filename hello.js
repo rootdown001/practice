@@ -11,3 +11,5 @@ function incrementer () {
 
 var newValue = incrementer(); // Should equal 5
 console.log(fixedValue); // Should print 4
+//test
+
